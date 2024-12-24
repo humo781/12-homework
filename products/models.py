@@ -10,5 +10,8 @@ class Product(models.Model):
     image = models.ImageField(upload_to='images/')
     # file = models.FileField(upload_to='files/')
 
+    def __str__(self):
+        return self.product_title
+
     def get_detail_url(self):
         return reverse('products:detail', args=[self.pk])

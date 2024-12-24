@@ -5,12 +5,12 @@
 <div class="container mt-4 flex-grow-1">
     <div class="row">
         <div class="col-md-6">
-            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" class="img-fluid" alt="Mahsulot Rasmi">
+            <img src="{{ product.image.url }}" width="5000" class="img-fluid" alt="Mahsulot Rasmi">
         </div>
         <div class="col-md-6">
-            <h1>Mahsulot Nomi</h1>
-            <p class="lead">Narxi: 100,000 so'm</p>
-            <p>Bu yerda mahsulot haqida batafsil ma'lumot beriladi. Mahsulotning xususiyatlari, afzalliklari va boshqa muhim ma'lumotlar yoziladi.</p>
+            <h1>{{ product.product_title }}</h1>
+            <p class="lead">Narxi: {{ product.price }} $</p>
+            <p>{{ product.description }}</p>
             <button class="btn btn-primary">Savatga qo'shish</button>
         </div>
     </div>
